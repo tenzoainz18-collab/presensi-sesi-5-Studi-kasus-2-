@@ -1,12 +1,12 @@
 1.Import library
 random=untuk membuat angka acak
-matplotlib.pyplot=untuk menampilkan grafik perkembangan solusi 
+matplotlib.pyplot=untuk menampilkan grafik perkembangan solusi.
 
 2.Data barang dan parameter
-pada bagian data dan parameter berisi data items adalah daftar barang memiliki atribut nama,berat,dan nilai.dan parameter MAX_WEIGHT sebagai kapasistas.POP_SIZE sebagai jumlah individu dalam satu populasi.GENERATIONS sebagai jumlah iterasi evolusi.MUTATION_RATE sebagai peluang mutasi pada gen,dan ELITE_SIZE adalah jumlah invidu terbaik yang langsung dipertahankan 
+pada bagian data dan parameter berisi data items adalah daftar barang memiliki atribut nama,berat,dan nilai.dan parameter MAX_WEIGHT sebagai kapasistas.POP_SIZE sebagai jumlah individu dalam satu populasi.GENERATIONS sebagai jumlah iterasi evolusi.MUTATION_RATE sebagai peluang mutasi pada gen,dan ELITE_SIZE adalah jumlah invidu terbaik yang langsung dipertahankan.
 
 3.Inisialisasi
-pada bagian Inisialisasi terdapat fungsi create_individual() yang berfungsi membuat satu individu berupa representasi biner yaitu 0 dan 1 sepanjang jumlah item.nilai 1 =dipilih dan 0 = tidak dipilih.fungsi init_population() digunakan untuk populasi awal yang terdiri dari sejumlah individu sebagai POP_SIZE.menjadi titik awal evolusi
+pada bagian Inisialisasi terdapat fungsi create_individual() yang berfungsi membuat satu individu berupa representasi biner yaitu 0 dan 1 sepanjang jumlah item.nilai 1 =dipilih dan 0 = tidak dipilih.fungsi init_population() digunakan untuk populasi awal yang terdiri dari sejumlah individu sebagai POP_SIZE.menjadi titik awal evolusi.
 
 4.Fitness(penilaian)
 Fungsi fitness() untuk menilai kualitas setiap invidu.dengan cara menjumlahkan total berat dan total nilai dari barang yang dipilih berdasarkan representasi biner individu.jika total berat melebihi MAX_WEIGHT,maka individu dianggap tidak valid dan nilai fitnessnya 0 sebagai penalti.jika tidak melebihi,maka fitness sama dengan total nilai barang,maka solusi dengan nilai terbesar akan dianggap terbaik.
